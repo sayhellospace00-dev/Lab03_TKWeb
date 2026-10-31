@@ -1,0 +1,93 @@
+body{
+    font-size: 15px;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: red;
+}
+#menu li{
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+#menu > li > a {
+    display: block;
+    padding: 12px 30px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#menu > li:hover > a {
+    background: red; 
+    color: white;
+}
+
+.has-drop > .drop-content { 
+    display:none; 
+    position:absolute; 
+    top:100%; 
+    left:0; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    background: #0b84d9;              
+    border: 1px solid #ffffff88;
+}
+.has-drop > .drop-content li{
+    border-bottom: 1px dotted #ffffff88;
+}
+
+.has-drop > .drop-content li a{
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.has-drop:hover > .drop-content { 
+    display: block; 
+}
+.has-drop > .drop-content li:hover > a {
+    color: white;
+}
+
+.has-sub  > .drop-sub-content { 
+    
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    left: 100%; 
+
+   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    background: #00c3b6;             
+    border: 1px solid #ffffff88;
+}
+
+.has-sub > .drop-sub-content li{
+    border-bottom: 1px dotted #ffffff88;
+}
+
+.has-sub > .drop-sub-content li a{
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.has-sub:hover  > .drop-sub-content { 
+    display: block; 
+}
+.has-sub > .drop-sub-content li:hover > a {
+    color: white;
+}
